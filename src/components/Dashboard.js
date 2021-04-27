@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, {Component} from "react";
+import {connect} from "react-redux";
+import Tweet from "./Tweet";
 
 class Dashboard extends Component {
     render() {
@@ -9,7 +10,7 @@ class Dashboard extends Component {
                 <ul className="dashboard-list">
                     {this.props.tweetIds.map(id => (
                         <li key={id}>
-                            <span>Tweet ID is: {id}</span>
+                            <Tweet id={id} />
                         </li>
                     ))}
                 </ul>
@@ -18,7 +19,7 @@ class Dashboard extends Component {
     }
 }
 
-function mapStateToStore({ tweets }) {
+function mapStateToStore({tweets}) {
     return {
         tweetIds: Object
             .keys(tweets)
