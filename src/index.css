@@ -56,6 +56,7 @@ a {
 
 .nav li:first-child {
     padding-left: 0;
+    padding-right: 16px;
 }
 
 ul {
