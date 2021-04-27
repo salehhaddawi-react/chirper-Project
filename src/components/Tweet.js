@@ -24,7 +24,7 @@ class Tweet extends React.Component {
         }
 
         const {
-            name, avatar, timestamp, text, hasLiked, likes, replies, id, parent
+            name, avatar, timestamp, text, hasLiked, likes, replies, parent
         } = tweet;
 
         return (
